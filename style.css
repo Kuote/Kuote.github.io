@@ -1,0 +1,290 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    opacityparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    opacityparent;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+ins {
+    opacity:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    opacity:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* -------------------------------- My Styles --------------------------------- */
+html {
+  font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  html {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #27c4c4;
+  background-color: #27c4c4;
+  transition: background-color 1s cubic-bezier(1, 1, 1, 1);
+	transition-delay: 0s;
+}
+.wrapper {
+
+ /*  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 600px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px; */
+  position: relative;
+  z-index: 2;
+  transition: background-color 1s cubic-bezier(1, 1, 1, 1);
+	transition-delay: 0s;
+}
+.quote__box {
+  position: relative;
+  width: 28rem;
+  padding: 2.5rem 3.125rem;
+  display: table;
+  opacity: #fff;
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  background-color: #fff;
+  transition: background-color 1s cubic-bezier(1, 1, 1, 1);
+	transition-delay: 0s;
+  }
+.text {
+  max-width: 35ch;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+  .quote-box  svg {
+    font-size: 1.0em;
+    margin-right: 0.4em;
+    transition-property: opacity;
+    opacity: 1;
+  }
+  .quote__text {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .quote__author {
+    text-align: right;
+    font-size: 1em;
+    padding-top: 20px;
+  }
+.button {
+    height: 2.5rem;
+    width: auto;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #27c4c4;
+    outline: none;
+    font-size: 1rem;
+    padding: 6px 18px 8px 18px;
+    opacity: 1;
+    cursor: pointer;
+    transition-property: all 1s ease-in ;
+    margin-bottom: 10px;
+}
+.button:hover {
+  opacity: 0.85;
+}
+.button__icon {
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: -25px;
+  transition: background-color 1s cubic-bezier(1, 1, 1, 1);
+	transition-delay: 0s;
+}
+
+.twitter{
+  float: left;
+  padding: 0px;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 17px;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fa-w-16 {
+  margin-left: 10px;
+}
+
+.footer {
+  margin-top: 17px;
+  color: white;
+}
+.footer a {
+  text-decoration: none; color: white;
+  font-weight: 600;
+}
+
+@keyframes fade-out {
+  0% {opacity : 1}
+  20% {opacity : 0.8}
+  40% {opacity : 0.6}
+  60% {opacity : 0.4}
+  80% {opacity : 0.2}
+  100% {opacity : 0}
+}
+@keyframes fade-in {
+  0% {opacity : 0}
+  20% {opacity : 0.2}
+  40% {opacity : 0.4}
+  60% {opacity : 0.6}
+  80% {opacity : 0.8}
+  100% {opacity : 1}
+}
+
+.in {
+  animation: fade-in 1s ease-in;
+}
+
+.out {
+  animation: fade-out 1s ease-out;
+}
+.newQuote {
+  font-size: 10px;
+}
+.twitter svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-90%, -50%);
+}
