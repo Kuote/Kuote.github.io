@@ -37,11 +37,13 @@ const renderQuote = () => {
   const content = getRandom(quotes, authors);
   docs.text.textContent = content[0]
   docs.author.textContent = `${content[1]} - `;
- 
+  document.querySelector('.twitter').href = `
+  https://twitter.com/intent/tweet?hashtags=Kuotes&related&text=${content[0]} - ${content[1]}
+  ` 
 }
 document.querySelector('.newQuote').addEventListener('click', animate)
+document.querySelector('.newQuote').addEventListener('load', animate)
 document.querySelector('.animate__this').addEventListener('animationend', renderQuote)
-
 
 
 /// https://twitter.com/intent/tweet?hashtags=quotes&related&text=%22When%20everything%20seems%20to%20be%20going%20against%20you%2C%20remember%20that%20the%20airplane%20takes%20off%20against%20the%20wind%2C%20not%20with%20it.%22%20Henry%20Ford
