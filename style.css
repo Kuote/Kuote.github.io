@@ -171,7 +171,10 @@ body {
 	transition-delay: 0s;
 }
 .quote__box {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 28rem;
   padding: 2.5rem 3.125rem;
   display: table;
@@ -251,12 +254,21 @@ body {
 }
 
 .footer {
-  margin-top: 17px;
+  margin-top: 284px;
   color: white;
 }
 .footer a {
   text-decoration: none; color: white;
   font-weight: 600;
+}
+
+@-webkit-keyframes fade-out {
+  0% {opacity : 1}
+  20% {opacity : 0.8}
+  40% {opacity : 0.6}
+  60% {opacity : 0.4}
+  80% {opacity : 0.2}
+  100% {opacity : 0}
 }
 
 @keyframes fade-out {
@@ -266,6 +278,14 @@ body {
   60% {opacity : 0.4}
   80% {opacity : 0.2}
   100% {opacity : 0}
+}
+@-webkit-keyframes fade-in {
+  0% {opacity : 0}
+  20% {opacity : 0.2}
+  40% {opacity : 0.4}
+  60% {opacity : 0.6}
+  80% {opacity : 0.8}
+  100% {opacity : 1}
 }
 @keyframes fade-in {
   0% {opacity : 0}
@@ -277,11 +297,13 @@ body {
 }
 
 .in {
-  animation: fade-in 1s ease-in;
+  -webkit-animation: fade-in 1s ease-in;
+          animation: fade-in 1s ease-in;
 }
 
 .out {
-  animation: fade-out 1s ease-out;
+  -webkit-animation: fade-out 1s ease-out;
+          animation: fade-out 1s ease-out;
 }
 .newQuote {
   font-size: 1rem;
@@ -291,4 +313,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-90%, -50%);
+}
+.animate__this {
+  position: relative;
 }
