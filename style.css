@@ -218,8 +218,9 @@ body {
     padding: 6px 18px 8px 18px;
     opacity: 1;
     cursor: pointer;
-    transition-property: all 1s ease-in ;
     margin-bottom: 10px;
+    transition: background-color 1s cubic-bezier(1, 1, 1, 1);
+	  transition-delay: 0s;
 }
 .button:hover {
   opacity: 0.85;
